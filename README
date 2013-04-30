@@ -1,4 +1,4 @@
 This shows how to use Global.scala to set up global auth for play apps.
 =====================================
 
-Take a look at Global.scala for how to use it.
+Take a look at Global.scala for how to use it: hint: put Global.scala in your controllers dir.
