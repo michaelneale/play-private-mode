@@ -1,11 +1,11 @@
 /**
  * Simple global auth for making play apps private - on cloudbees.
  * to use: 
- * 1. Drop this file in your project as controllers/Global.scala
- * 2. deploy your app to cloudbees via whatever means
- * 3. run bees config:set password=SECRETHERE
- * restart the app - and from then on basic authentication will be required until you unset that config (via bees )
- * (in this case user name doesn't matter)
+ * 
+ * Drop this file in your project as controllers/Global.scala
+ * then when you want to make it private run: 
+ * bees config:set password=SECRET and restart your app.
+ * It will then use basic auth to look for the SECRET password (user name ignored)
  * 
  * Author: Michael Neale
  */
