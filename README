@@ -1,4 +1,4 @@
-This is your new Play 2.1 application
+This shows how to use Global.scala to set up global auth for play apps.
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+Take a look at Global.scala for how to use it.
