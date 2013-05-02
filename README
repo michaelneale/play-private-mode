@@ -2,3 +2,5 @@ This shows how to use Global.scala to set up global auth for play apps.
 =====================================
 
 Take a look at Global.scala for how to use it: hint: put Global.scala in your controllers dir.
+
+And yes, if you have an existing Globals, or even a java one, you can still use this in your project!
