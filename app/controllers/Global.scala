@@ -7,6 +7,10 @@
  * bees config:set password=SECRET and restart your app.
  * It will then use basic auth to look for the SECRET password (user name ignored)
  * 
+ * This works with Java based play projects just the same. 
+ * If you have an existing Global.java, rename it to, say, JavaGlobal.java, and then extend it as shown below:
+ * eg: object Global extends play.core.j.JavaGlobalSettingsAdapter(new JavaGlobal())
+ * 
  * Author: Michael Neale
  */
 
@@ -15,9 +19,9 @@ import play.api.mvc.{Action, RequestHeader}
 import play.api.mvc.Results._
 
 
-
+//NOTE if you have an existing Java one you want to combine this with: 
+//object Global extends play.core.j.JavaGlobalSettingsAdapter(new JavaGlobal())
 object Global extends GlobalSettings {
-
 
 def decodeBasicAuth(auth: String) = {
     val baStr = auth.replaceFirst("Basic ", "")
